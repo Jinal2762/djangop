@@ -1,0 +1,50 @@
+{% extends "admin_header.html" %}
+{% load static %}
+{% block content %}
+<div class="breadcrumbs-wrap">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-sm-4 col-12">
+                <div class="breadcrumbs-area">
+                    <h1>AREA</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="card component-table">
+        <div class="card-body">
+            <h3 class="text-body text-center text-md-left text-22 text-bold mb-4">Area Table</h3>
+            <div class="table-responsive">
+                <table id="Area-Table" class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Area Id</th>
+                        <th>Area Name</th>
+                        <th>Pincode</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for data in areas %}
+                    <tr>
+                        <td>{{ data.area_id }}</td>
+                        <td>{{ data.area_name }}</td>
+                        <td>{{ data.pincode }}</td>
+
+                    </tr>
+                    {% endfor %}
+                     <tr>
+                        <td>1121</td>
+                        <td>Raipur</td>
+                        <td>380001</td>
+
+                     </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

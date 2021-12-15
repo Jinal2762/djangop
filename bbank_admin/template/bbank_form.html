@@ -1,0 +1,121 @@
+{% extends "admin_header.html" %}
+{% load static %}
+{% block content %}
+
+<h3 class="text-22 text-midnight text-bold mb-4">Bloodbank Form</h3>
+                                    <form>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Bloodbank Id</label>
+                                            </div>
+                                            <input type="text" class="form-control" value="" name="b_id">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Bloodbank Name</label>
+                                            </div>
+                                            <input type="text" class="form-control" value="" name="b_name">
+                                        </div>
+                                         <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Address</label>
+                                            </div>
+                                            <textarea class="form-control" id="textarea" rows="5"></textarea>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Email</label>
+                                            </div>
+                                            <input type="email" class="form-control" value="" name="email">
+                                        </div>
+                                       <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Password</label>
+                                            </div>
+                                            <input type="password" class="form-control" value="" name="psw">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Contact No</label>
+                                            </div>
+                                            <input type="text" class="form-control" value="" name="pcontact">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Timing</label>
+                                            </div>
+                                            <input type="time" class="form-control" value="" name="timing">
+                                        </div>
+                                         <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Area Id</label>
+                                            </div>
+                                            <input type="text" class="form-control" value="" name="a_id">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Placeholder Input</label>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Placeholder Input Text" name="name">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Readonly Input</label>
+                                            </div>
+                                            <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Disabled Input</label>
+                                            </div>
+                                            <input class="form-control" type="text" placeholder="Disabled input here…" disabled>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>File Input</label>
+                                            </div>
+                                            <input type="file" class="form-control-file form-control pt-2" id="exampleFormControlFile1">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="check3">
+                                                <label class="form-check-label" for="check3">Default Checkbox</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="check4" checked>
+                                                <label class="form-check-label" for="check4">Checked Checkbox</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="check5" disabled>
+                                                <label class="form-check-label" for="check5">Disabled Checkbox</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">Checked Radio</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option1">
+                                                <label class="form-check-label" for="exampleRadios2">Default Radio</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option1" disabled>
+                                                <label class="form-check-label" for="exampleRadios3">Disabled Radio</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="submit-btn">SUBMIT FORM</button>
+                                        </div>
+                                    </form>
+
+{% endblock %}

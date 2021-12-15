@@ -1,0 +1,31 @@
+{% extends "admin_header.html" %}
+{% load static %}
+{% block content %}
+
+<h3 class="text-22 text-midnight text-bold mb-4">Area Form</h3>
+                                    <form>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Area Id</label>
+                                            </div>
+                                            <input type="text" class="form-control" value="" name="a_id">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Area Name</label>
+                                            </div>
+                                            <input type="a_name" class="form-control" value="" name="name">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Pincode</label>
+                                            </div>
+                                            <input type="a_pincode" class="form-control" value="" name="pincode">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <button type="submit" class="submit-btn">SUBMIT FORM</button>
+                                        </div>
+                                    </form>
+
+{% endblock %}

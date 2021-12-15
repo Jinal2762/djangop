@@ -1,0 +1,50 @@
+{% extends "admin_header.html" %}
+{% load static %}
+{% block content %}
+
+<h3 class="text-22 text-midnight text-bold mb-4">Appointment Form</h3>
+                                    <form>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Appointment Id</label>
+                                            </div>
+                                            <input type="text" class="form-control" value="" name="a_id">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Donor Id</label>
+                                            </div>
+                                            <input type="text" class="form-control" value="" name="d_id">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Given Date</label>
+                                            </div>
+                                            <input type="date" class="form-control" value="" name="date">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Bloodbank Id</label>
+                                            </div>
+                                            <input type="text" class="form-control" value="" name="b_id">
+                                        </div>
+
+                                         <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Appointment Status</label>
+                                            </div>
+                                            <input type="text" class="form-control" value="" name="status">
+                                        </div>
+                                         <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Appointment Time</label>
+                                            </div>
+                                            <input type="datetime-local" class="form-control" value="" name="time">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <button type="submit" class="submit-btn">SUBMIT FORM</button>
+                                        </div>
+                                    </form>
+
+{% endblock %}

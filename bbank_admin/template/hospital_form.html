@@ -1,0 +1,62 @@
+{% extends "admin_header.html" %}
+{% load static %}
+{% block content %}
+
+<h3 class="text-22 text-midnight text-bold mb-4">Bloodbank Form</h3>
+                                    <form>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Hospital Id</label>
+                                            </div>
+                                            <input type="text" class="form-control" value="" name="h_id">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Hospital Name</label>
+                                            </div>
+                                            <input type="text" class="form-control" value="" name="h_name">
+                                        </div>
+                                         <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Address</label>
+                                            </div>
+                                            <textarea class="form-control" id="textarea" rows="5" name="h_add"></textarea>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Email</label>
+                                            </div>
+                                            <input type="email" class="form-control" value="" name="h_email">
+                                        </div>
+                                       <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Password</label>
+                                            </div>
+                                            <input type="password" class="form-control" value="" name="h_psw">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Contact No</label>
+                                            </div>
+                                            <input type="text" class="form-control" value="" name="h_contact">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Timing</label>
+                                            </div>
+                                            <input type="time" class="form-control" value="" name="h_timing">
+                                        </div>
+                                         <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Area Id</label>
+                                            </div>
+                                            <input type="text" class="form-control" value="" name="a_id">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <button type="submit" class="submit-btn">SUBMIT FORM</button>
+                                        </div>
+                                    </form>
+
+{% endblock %}

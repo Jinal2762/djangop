@@ -1,0 +1,49 @@
+{% extends "admin_header.html" %}
+{% load static %}
+{% block content %}
+<div class="breadcrumbs-wrap">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-sm-4 col-12">
+                <div class="breadcrumbs-area">
+                    <h1>Blood Group</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="card component-table">
+        <div class="card-body">
+            <h3 class="text-body text-center text-md-left text-22 text-bold mb-4">Blood Group Table</h3>
+            <div class="table-responsive">
+                <table id="Area-Table" class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Bloodgroup Id</th>
+                        <th>Bloodgroup Type</th>
+
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for data in bgrps %}
+                    <tr>
+                        <td>{{ data.bloodgrp_id }}</td>
+                        <td>{{ data.bloodgrp_type }}</td>
+
+
+                    </tr>
+                    {% endfor %}
+                     <tr>
+                        <td>1551</td>
+                        <td>AB+</td>
+
+                     </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

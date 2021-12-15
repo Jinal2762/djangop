@@ -1,0 +1,116 @@
+{% extends "admin_header.html" %}
+{% load static %}
+{% block content %}
+
+<h3 class="text-22 text-midnight text-bold mb-4">Form Inputs</h3>
+                                    <form>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Donor Id</label>
+                                            </div>
+                                            <input type="number" class="form-control" value="" name="d_id">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>First Name</label>
+                                            </div>
+                                            <input type="text" class="form-control" value="" name="d_fname">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Last Name</label>
+                                            </div>
+                                            <input type="text" class="form-control" value="" name="d_lname">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Email</label>
+                                            </div>
+                                            <input type="email" class="form-control" value="" name="email">
+                                        </div>
+                                        <div class="form-group">
+                                        <div class="input-label">
+                                                <label>Blood-Group Id</label>
+                                            </div>
+                                            <input type="number" class="form-control" value="" name="bgrp_id">
+                                        </div>
+                                        <div class="form-group">
+                                         <div class="input-label">
+                                                <label>Gender</label>
+                                            </div>
+                                            <input type="text" class="form-control" value="" name="d_gender">
+                                        </div>
+                                        <div class="form-group">
+                                        <div class="input-label">
+                                            <label>Email</label>
+                                            </div>
+                                            <input type="email" class="form-control" value="" name="d_email">
+                                        </div>
+                                        <div class="form-group">
+                                        <div class="input-label">
+                                                <label>Date of Birth</label>
+                                            </div>
+                                            <input type="date" class="form-control" value="" name="d_date">
+                                        </div>
+                                        <div class="form-group">
+                                        <div class="input-label">
+                                                <label>Donor Weight</label>
+                                            </div>
+                                            <input type="number" class="form-control" value="" name="d_weight">
+                                        </div>
+                                        <div class="form-group">
+                                        <div class="input-label">
+                                                <label>Contact No</label>
+                                            </div>
+                                            <input type="number" class="form-control" value="" name="d_contact">
+                                        </div>
+                                        <div class="form-group">
+                                        <div class="input-label">
+                                                <label>Id Proof</label>
+                                            </div>
+                                            <input type="number" class="form-control" value="" name="d_proof">
+                                        </div>
+                                        <div class="form-group">
+                                         <div class="input-label">
+                                                <label>House Number</label>
+                                            </div>
+                                            <input type="number" class="form-control" value="" name="d_home">
+                                        </div>
+                                        <div class="form-group">
+                                         <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Donor Address</label>
+                                            </div>
+                                             <textarea class="form-control" id="textarea" rows="5" name="d_add"></textarea>
+                                         </div>
+                                         <div class="form-group">
+                                         <div class="input-label">
+                                                <label>State</label>
+                                            </div>
+                                            <input type="text" class="form-control" value="" name="d_state">
+                                        </div>
+                                            <div class="form-group">
+                                         <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Username</label>
+                                            </div>
+                                            <input type="text" class="form-control" value="" name="d_username">
+                                        </div>
+                                         <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Password</label>
+                                            </div>
+                                            <input type="password" class="form-control" value="" name="d_psw">
+                                        </div>
+                                         <div class="form-group">
+                                            <div class="input-label">
+                                                <label>Area Id</label>
+                                            </div>
+                                            <input type="number" class="form-control" value="" name="a_id">
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="submit-btn">SUBMIT FORM</button>
+                                        </div>
+                                    </form>
+
+{% endblock %}
